@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav_link">
+                <ul> 
+                    
+                    <li> <a href="#">home</a></li>
+                    <li> <a href="#">accessoires</a></li>
+                    <li> <a href="#">telephone</a></li>
+                    <li> <a href="#">carte</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay">
+
+            </div>
+            <img src="images/58ac4b8b0aaa10546adf2705.png" alt="" class="mobile">
+            <div id="cercle">
+                <div class="future un"><img src="images/54-544614_smartphone-hd-png-download.png" alt="" style="width:100px ;">
+                    <div>
+                        <h1>camera</h1>
+                        <p>12MP ,Wide Angle Lense</p>
+                    </div>
+                 </div>
+                <div class="future deux"> <img src="images/images.png" alt="" style="width: 100px ;">
+                    <div>
+                        <h1>camera</h1>
+                        <p>12MP ,Wide Angle Lense</p>
+                    </div>
+                  </div>
+                <div class="future trois">  <img src="images/camera.png" alt="" style="width: 100px ;">
+                    <div>
+                        <h1>big</h1>
+                        <p>12MP ,Wide Angle Lense</p>
+                    </div>
+                 </div>
+                <div class="future quatre"> <img src="images/free-camera-icon-vector-14.png" alt="" style="width: 100px ;"> 
+                    <div>
+                        <h1>telephone</h1>
+                        <p>12MP ,Wide Angle Lense</p>
+                    </div>
+                </div>
+        
+                   
+                </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+        <div class="control">
+            <img src="images/Down-Arrow-PNG-HD.png" alt="" id="downbtn" style="width:20px;">
+            <h3>futures</h3>
+            <img src="images/mg.png" alt="" id="upbn" style="width: 20px;">
+            
+
+        </div>
+    </div>
+    <script>
+        var cercle = document.getElementById ("cercle");
+        var downbtn = document.getElementById ("downbtn"); 
+        var upbn = document.getElementById ("upbn");
+
+        var rotatevalue = cercle.style.transform;
+        var rotatesum;
+        upbn.onclick = function()
+        {
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            cercle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+        downbtn.onclick = function()
+        {
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            cercle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+    </script>
+</body>
+
+</html>
